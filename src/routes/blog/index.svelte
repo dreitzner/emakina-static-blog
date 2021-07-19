@@ -1,17 +1,14 @@
 <script context="module" lang="ts">
 	import type { Load } from '@sveltejs/kit';
 
+	export const prerender = true;
+
 	// see https://kit.svelte.dev/docs#loading
 	export const load: Load = async ({ fetch }) => {
-		const res = await fetch('https://www.emakina.com/api/news/getnewsbytype/de-at/2');
+		const res = await fetch('/blog.json');
 
 		if (res.ok) {
-			let posts = await res.json();
-
-			posts = posts.map(p => {
-				p.slug = `/blog/${p.postUrl.split('/').pop()}`;
-				return p;
-			});
+			const {posts} = await res.json();
 
 			return {
 				props: { posts }
