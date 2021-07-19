@@ -3,7 +3,6 @@
 </script>
 
 <script lang="ts">
-	import Counter from '$lib/Counter.svelte';
 </script>
 
 <svelte:head>
@@ -19,14 +18,12 @@
 			</picture>
 		</div>
 
-		to your new<br />SvelteKit app
+		to your new<br />static generated site
 	</h1>
 
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
+	<p>
+		This is a showcase and uses Emakina CEE's blog posts.
+	</p>
 </section>
 
 <style>

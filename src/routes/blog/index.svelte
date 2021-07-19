@@ -36,7 +36,7 @@
 <div class="posts">
 	{#each posts as post}
 		<a href={post.slug}>
-			<img src={post.imageUrl} alt={post.title}>
+			<img src={post.imageUrl} alt={post.title} height="169" width="300" loading="lazy">
 			<h2>{post.title}</h2>
 			<time>{post.formatedTime}</time>
 		</a>

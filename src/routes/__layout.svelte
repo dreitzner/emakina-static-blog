@@ -10,7 +10,7 @@
 </main>
 
 <footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+	<p>visit <a href="https://emakinacee.com" target="_blank">emakinacee.com</a> to learn more about Emakina</p>
 </footer>
 
 <style>

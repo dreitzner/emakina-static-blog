@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import logo from './svelte-logo.svg';
+	import logo from './logo.svg';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
+		<a href="https://emakinacee.com/">
+			<img src={logo} alt="Emakina CEE" />
 		</a>
 	</div>
 
@@ -36,8 +36,8 @@
 	}
 
 	.corner {
-		width: 3em;
 		height: 3em;
+		margin: 0 0.5rem;
 	}
 
 	.corner a {
@@ -49,7 +49,7 @@
 	}
 
 	.corner img {
-		width: 2em;
+		width: auto;
 		height: 2em;
 		object-fit: contain;
 	}
