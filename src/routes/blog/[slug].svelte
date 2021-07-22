@@ -1,6 +1,5 @@
 <script context="module" lang="ts">
 	import type { Load } from '@sveltejs/kit';
-import Error from '../__error.svelte';
 
 	// see https://kit.svelte.dev/docs#loading
 	export const load: Load = async ({ fetch, page }) => {
